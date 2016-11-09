@@ -19,7 +19,7 @@
 
    2. src: assets/js/scripts.js --> minified: assets/js/min/scripts.min.js
 
-   3. base: html/*.html --> site: site/*.html
+   3. base: html/filename.html --> site: site/filename.html
 
 
 ## Available Grunt commands
