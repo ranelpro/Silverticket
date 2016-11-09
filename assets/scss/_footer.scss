@@ -1,0 +1,109 @@
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+/*  Footer
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+
+footer {
+	background-color: #fff;
+	border-top: 4px solid $brand-primary;
+	color: #333;
+	font-size: 14px;
+	margin-top: -71px;
+	position: relative;
+	width: 100%;
+
+	@media screen and (max-width: $screen-sm-min) {
+		margin-top: -135px;
+		text-align: center;
+	}
+
+	.footer-inner {
+		@extend .row;
+	}
+
+	.footer-left,
+	.footer-right {
+		@extend .col-sm-6;
+	}
+
+	ul {
+		@extend .list-inline;
+
+		@media screen and (min-width: $screen-sm-min) {
+			margin-bottom: 0;
+		}
+
+		a {
+			color: #333;
+			display: block;
+			padding: 22px 0;
+
+			@media screen and (max-width: $screen-sm-min) {
+				padding: 6px 0;
+			}
+
+			&:hover, &:focus {
+				color: $brand-primary;
+			}
+		}
+	}
+
+	.footer-left {
+
+		@media screen and (max-width: $screen-sm-min) {
+			padding-top: 15px;
+		}
+
+		li {
+			position: relative;
+
+			&:first-child {
+
+				@media screen and (min-width: $screen-sm-min) {
+					margin-right: 35px;
+				}
+
+				&:after {
+
+					@media screen and (min-width: $screen-sm-min) {
+						background-color: #333;
+						content: "";
+						float: right;
+						height: 18px;
+						margin-left: 25px;
+						position: absolute;
+						right: -20px;
+						top: 23px;
+						width: 1px;
+					}
+				}
+			}
+		}
+	}
+
+	.footer-right {
+
+		@media screen and (min-width: $screen-sm-min) {
+			text-align: right;
+		}
+
+		li {
+			padding: 0;
+
+			a {
+				color: $brand-primary;
+				display: block;
+				font-size: 16px;
+				padding: 22px 10px;
+
+				@media screen and (max-width: $screen-sm-min) {
+					padding: 6px 10px;
+				}
+
+				&:hover, &:focus {
+					color: darken($brand-primary, 10%);
+				}
+			}
+		}
+	}
+}

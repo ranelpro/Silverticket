@@ -1,0 +1,35 @@
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+/*  Forms
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+
+label {
+	font-weight: $regular;
+}
+
+.checkbox {
+
+	label {
+		padding-left: 5px;
+
+		&::before {
+			background-color: $brand-primary;
+			border-color: $brand-primary;
+		}
+
+		&::after {
+			color: #fff;
+		}
+	}
+}
+
+.radio {
+
+	label {
+		padding-left: 5px;
+
+		&::after {
+			background-color: $brand-primary;
+		}
+	}
+}

@@ -1,0 +1,82 @@
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+/*  Carousel
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+
+.carousel {
+
+	.container {
+		position: relative;
+	}
+
+	.carousel-caption {
+		background: #fff;
+		background-color: rgba(244, 244, 244, 0.7);
+		bottom: 130px;
+		left: 15px;
+		max-width: 635px;
+		padding: 30px 40px;
+		text-align: left;
+		@extend .hidden-sm;
+		@extend .hidden-xs;
+
+		@media screen and (max-width: $screen-lg-min) {
+			bottom: 80px;
+		}
+
+		h2 {
+			font-size: 44px;
+			font-weight: $regular;
+			margin-top: 0;
+			text-transform: uppercase;
+		}
+
+		p {
+			font-size: 17px;
+			margin-bottom: 0;
+		}
+	}
+
+	.carousel-control {
+		background: transparent;
+
+		.icon-prev, .icon-next {
+			font-family: "FontAwesome";
+			margin-top: -30px;
+		}
+
+		.icon-prev {
+
+			&:before {
+				content: '\f104';
+			}
+		}
+
+		.icon-next {
+
+			&:before {
+				content: '\f105';
+			}
+		}
+	}
+
+	.carousel-indicators {
+
+		@media screen and (max-width: $screen-sm-min) {
+			margin-bottom: 0;
+		}
+
+		li {
+			background-color: #fff;
+			border: 0;
+			height: 20px;
+			margin: 0 8px;
+			width: 20px;
+		}
+		
+		.active {
+			background-color: $brand-primary;
+			border: 0;
+		}
+	}
+}

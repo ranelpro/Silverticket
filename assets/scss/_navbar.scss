@@ -1,0 +1,50 @@
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+/*  Navbar
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+
+.navbar-default {
+	border: 0;
+
+	.navbar-brand {
+
+		img {
+			margin-top: -7px;
+
+			@media screen and (max-width: $screen-md-min) {
+				height: auto;
+				margin-top: 0;
+				max-width: 200px;
+			}
+		}
+	}
+
+	.navbar-nav {
+
+		@media screen and (max-width: $screen-sm-min) {
+			margin: 0;
+			margin-bottom: 1px;
+		}
+
+		li {
+
+			a {
+				font-size: 16px;
+				font-weight: $bold;
+
+				@media screen and (max-width: $screen-sm-min) {
+					border-top: 1px solid #f2f2f2;
+					text-align: center;
+				}
+			}
+		}
+	}
+
+	.navbar-collapse {
+
+		@media screen and (max-width: $screen-sm-min) {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
