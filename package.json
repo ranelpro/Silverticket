@@ -1,5 +1,5 @@
 {
-  "name": "proekspert",
+  "name": "silverticket",
   "version": "1.0.0",
   "private": true,
   "devDependencies": {
@@ -13,7 +13,7 @@
     "grunt-contrib-watch": "^1.0.0",
     "grunt-includes": "^1.0.0"
   },
-  "description": "Proekspert",
+  "description": "Silverticket",
   "main": "Gruntfile.js",
   "dependencies": {
     "grunt": "^0.4.5",
