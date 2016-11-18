@@ -8,12 +8,10 @@ footer {
 	border-top: 4px solid $brand-primary;
 	color: #333;
 	font-size: 14px;
-	margin-top: -71px;
 	position: relative;
 	width: 100%;
 
 	@media screen and (max-width: $screen-sm-min) {
-		margin-top: -135px;
 		text-align: center;
 	}
 
@@ -21,9 +19,12 @@ footer {
 		@extend .row;
 	}
 
-	.footer-left,
+	.footer-left {
+		@extend .col-sm-8;
+	}
+
 	.footer-right {
-		@extend .col-sm-6;
+		@extend .col-sm-4;
 	}
 
 	ul {

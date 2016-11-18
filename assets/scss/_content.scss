@@ -4,144 +4,64 @@
 /* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
 
 .content {
-	min-height: 100%;
 
 	section {
-		padding-bottom: 151px;
+		padding: 75px 0;
+		@extend .text-center;
 
-		.toggle-content.off {
-			margin-bottom: -71px;
+		@media screen and (max-width: $screen-sm-min) {
+			padding: 50px 0;
+		}
+
+		h2 {
+			font-size: 45px;
+
+			@media screen and (max-width: $screen-lg-min) {
+				font-size: 35px;
+			}
+
+			@media screen and (max-width: $screen-md-min) {
+				font-size: 28px;
+			}
+
+			@media screen and (max-width: $screen-sm-min) {
+				font-size: 21px;
+				line-height: 28px;
+			}
+
+			small {
+				color: $text-color;
+				font-size: 25px;
+
+				@media screen and (max-width: $screen-lg-min) {
+					font-size: 18px;
+				}
+
+				@media screen and (max-width: $screen-md-min) {
+					font-size: 16px;
+				}
+
+				@media screen and (max-width: $screen-sm-min) {
+					font-size: 14px;
+				}
+			}
+		}
+
+		a {
+			color: $text-color;
+
+			&:hover, &:focus {
+				color: $brand-primary;
+			}
+		}
+
+		hr {
+			margin-top: 40px;
 		}
 	}
 }
 
-section {
-
-	.box-inner {
-		background-color: #f8f8f8;
-		min-height: 520px;
-		padding: 40px 40px 20px;
-		position: relative;
-
-		@media screen and (min-width: $screen-lg-min) {
-			height: 520px;
-			overflow: hidden;
-
-			&:after {
-				background-color: #f8f8f8;
-				bottom: 0;
-				content: "";
-				height: 20px;
-				left: 0;
-				position: absolute;
-				width: 100%;
-				z-index: 100;
-			}
-		}
-
-		@media screen and (max-width: $screen-md-min) {
-			padding-bottom: 30px;
-		}
-
-		@media screen and (max-width: $screen-sm-min) {
-			margin-top: 20px;
-			min-height: auto;
-			padding: 20px;
-		}
-
-		.fa {
-			background-color: $brand-primary;
-			border-radius: 100%;
-			border: 2px solid #7ceaeb;
-			color: #fff;
-			display: block;
-			font-size: 50px;
-			height: 105px;
-			line-height: 105px;
-			margin: 0 auto 10px;
-			text-align: center;
-			width: 105px;
-		}
-
-		.fa-user-md, .fa-stethoscope {
-			font-size: 60px;
-		}
-
-		h2, h3 {
-
-			@media screen and (min-width: $screen-lg-min) {
-				padding: 0 30px;
-			}
-		}
-
-		h2 {
-			color: $brand-primary;
-			font-size: 34px;
-			font-weight: $bold;
-			line-height: 40px;
-			margin-top: 0;
-			text-align: center;
-
-			@media screen and (min-width: $screen-lg-min) {
-				left: 0;
-				position: absolute;
-				right: 0;
-				top: 43%;
-			}
-		}
-
-		h3 {
-			font-size: 22px;
-			font-weight: $regular;
-			line-height: 28px;
-			margin-bottom: 20px;
-			margin-top: 0;
-			text-align: center;
-		}
-
-		ul {
-			padding-left: 15px;
-			@extend .list-unstyled;
-
-			li {
-				margin-bottom: 10px;
-				position: relative;
-
-				&:before {
-					color: $brand-primary;
-					content: "•";
-					font-size: 30px;
-					left: -15px;
-					position: absolute;
-					top: -15px;
-				}
-			}
-		}
-	}
-
-	.col-md-4 {
-
-		&:first-child {
-
-			h3 {
-				line-height: 50px;
-				padding-bottom: 6px;
-			}
-		}
-
-		&:nth-child(3) {
-			
-			.box-inner {
-
-				@media screen and (max-width: $screen-md-min) {
-					margin-top: 30px;
-					min-height: auto;
-				}
-
-				@media screen and (max-width: $screen-sm-min) {
-					margin-top: 20px;
-				}
-			}
-		}
-	}
+.no-padding-left {
+	padding-left: 0;
+	padding-right: 0;
 }

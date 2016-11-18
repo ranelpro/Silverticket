@@ -1,5 +1,5 @@
 
-#  README Proekspert
+#  README
 
 
 ## Installation

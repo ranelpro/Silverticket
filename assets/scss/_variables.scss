@@ -8,14 +8,14 @@
 //
 //## Gray and brand colors for use across Bootstrap.
 
-$gray-base:              #000 !default;
+//$gray-base:              #000 !default;
 // $gray-darker:            lighten($gray-base, 13.5%) !default; // #222
-$gray-dark:              lighten($gray-base, 20%) !default;   // #333
+//$gray-dark:              lighten($gray-base, 20%) !default;   // #333
 // $gray:                   lighten($gray-base, 33.5%) !default; // #555
 // $gray-light:             lighten($gray-base, 46.7%) !default; // #777
 // $gray-lighter:           lighten($gray-base, 93.5%) !default; // #eee
 
-$brand-primary:         #00dcdf !default;
+$brand-primary:         #a9d4e5 !default;
 // $brand-success:         #5cb85c !default;
 // $brand-info:            #5bc0de !default;
 // $brand-warning:         #f0ad4e !default;
@@ -29,7 +29,7 @@ $brand-primary:         #00dcdf !default;
 //** Background color for `<body>`.
 // $body-bg:               #fff !default;
 //** Global text color on `<body>`.
-$text-color:            $gray-dark !default;
+$text-color:            #171717 !default;
 
 //** Global textual link color.
 // $link-color:            $brand-primary !default;
@@ -150,13 +150,13 @@ $headings-font-weight:    $regular !default;
 //
 //## For each of Bootstrap's buttons, define text, background and border color.
 
-$btn-font-weight:                $bold !default;
+$btn-font-weight:                $regular !default;
 
 // $btn-default-color:              #333 !default;
 // $btn-default-bg:                 #fff !default;
 // $btn-default-border:             #ccc !default;
 
-// $btn-primary-color:              #fff !default;
+$btn-primary-color:              #171717 !default;
 // $btn-primary-bg:                 $brand-primary !default;
 $btn-primary-border:             $brand-primary !default;
 
@@ -365,7 +365,7 @@ $input-color-placeholder:        #c0c0c0 !default;
 //##
 
 // Basics of a navbar
-$navbar-height:                    70px !default;
+$navbar-height:                    54px !default;
 $navbar-margin-bottom:             0 !default;
 $navbar-border-radius:             0 !default;
 // $navbar-padding-horizontal:        floor(($grid-gutter-width / 2)) !default;
@@ -373,12 +373,12 @@ $navbar-border-radius:             0 !default;
 // $navbar-collapse-max-height:       340px !default;
 
 // $navbar-default-color:             #777 !default;
-$navbar-default-bg:                transparent !default;
+$navbar-default-bg:                #171717 !default;
 // $navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
 
 // Navbar links
-$navbar-default-link-color:                #707070 !default;
-// $navbar-default-link-hover-color:          #333 !default;
+$navbar-default-link-color:                #fff !default;
+$navbar-default-link-hover-color:          #999 !default;
 // $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         $brand-primary !default;
 $navbar-default-link-active-bg:            transparent !default;
@@ -492,12 +492,12 @@ $navbar-default-toggle-border-color:       transparent !default;
 //
 //##
 
-// $jumbotron-padding:              30px !default;
-// $jumbotron-color:                inherit !default;
-// $jumbotron-bg:                   $gray-lighter !default;
-// $jumbotron-heading-color:        inherit !default;
-// $jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
-// $jumbotron-heading-font-size:    ceil(($font-size-base * 4.5)) !default;
+$jumbotron-padding:              30px !default;
+$jumbotron-color:                inherit !default;
+$jumbotron-bg:                   #fff !default;
+$jumbotron-heading-color:        inherit !default;
+$jumbotron-font-size:            ceil(($font-size-base * 1.5)) !default;
+$jumbotron-heading-font-size:    ceil(($font-size-base * 4.5)) !default;
 
 
 //== Form states and alerts
@@ -811,17 +811,17 @@ $navbar-default-toggle-border-color:       transparent !default;
 //
 //##
 
-$carousel-text-shadow:                        0 !default;
+//$carousel-text-shadow:                        0 !default;
 
-$carousel-control-color:                      $brand-primary !default;
-$carousel-control-width:                      10% !default;
-$carousel-control-opacity:                    1 !default;
-$carousel-control-font-size:                  40px !default;
+// $carousel-control-color:                      $brand-primary !default;
+// $carousel-control-width:                      10% !default;
+// $carousel-control-opacity:                    1 !default;
+// $carousel-control-font-size:                  40px !default;
 
-$carousel-indicator-active-bg:                $brand-primary !default;
+// $carousel-indicator-active-bg:                $brand-primary !default;
 // $carousel-indicator-border-color:             #fff !default;
 
-$carousel-caption-color:                      $text-color !default;
+//$carousel-caption-color:                      $text-color !default;
 
 
 //== Close

@@ -9,11 +9,11 @@
 	.navbar-brand {
 
 		img {
-			margin-top: -7px;
+			margin-top: -5px;
 
 			@media screen and (max-width: $screen-md-min) {
 				height: auto;
-				margin-top: 0;
+				margin-top: -5px;
 				max-width: 200px;
 			}
 		}
@@ -29,11 +29,11 @@
 		li {
 
 			a {
-				font-size: 16px;
-				font-weight: $bold;
+				font-size: 14px;
+				font-weight: $regular;
 
 				@media screen and (max-width: $screen-sm-min) {
-					border-top: 1px solid #f2f2f2;
+					border-top: 1px solid #333;
 					text-align: center;
 				}
 			}

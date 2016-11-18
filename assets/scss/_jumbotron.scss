@@ -1,0 +1,74 @@
+
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+/*  Jumbotron
+/* ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- ---- */
+
+.jumbotron {
+	margin-bottom: 0;
+	padding: 0;
+	position: relative;
+
+	img {
+		display: block;
+		height: auto;
+		width: 100%;
+	}
+
+	.container {
+
+		@media screen and (max-width: $screen-md-min) {
+			padding: 0;
+			width: 100%;
+		}
+	}
+
+	.jumbotron-inner {
+		background: #171717;
+		background-color: rgba(0, 0, 0, 0.7);
+		bottom: 0;
+		left: 0;
+		margin: auto;
+		padding: 15px 30px 20px;
+		position: absolute;
+		right: 0;
+		width: 100%;
+		@extend .text-center;
+
+		@media screen and (max-width: $screen-md-min) {
+			background: #171717;
+			padding: 15px 30px 5px;
+			position: relative;
+		}
+
+		h1 {
+			color: #fff;
+			font-size: 32px;
+
+			@media screen and (max-width: $screen-md-min) {
+				line-height: 40px;
+				margin-top: 0;
+			}
+
+			@media screen and (max-width: $screen-sm-min) {
+				font-size: 21px;
+				line-height: 28px;
+			}
+		}
+
+		.btn {
+			margin: 15px 0;
+
+			@media screen and (max-width: $screen-sm-min) {
+				margin-top: 5px;
+			}
+		}
+
+		p {
+			color: #fff;
+
+			@media screen and (max-width: $screen-sm-min) {
+				font-size: 16px;
+			}
+		}
+	}
+}
